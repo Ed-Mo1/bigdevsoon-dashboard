@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-roboto bg-blue-4 dark:bg-dark-blue dark:bg-opacity-[86%]  text-black dark:text-white;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  @apply border-[15px] bg-black-16  dark:bg-dark-blue;
+}
+
+@layer utilities {
+  .header-xl {
+    @apply font-bold text-[34px];
+  }
+  .header-l {
+    @apply font-bold text-[26px];
+  }
+  .header-s {
+    @apply font-bold text-[18px];
+  }
+  .subtext {
+    @apply text-[11px];
+  }
+  .subtext-2 {
+    @apply text-[11px] font-bold;
+  }
+}
+.users::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 15px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  @apply bg-gradient-to-r from-blue to-75%  from-75% to-blue-60;
+}
+@layer components {
+  .sidebar-item {
+    @apply flex items-center transition-colors text-black-60 dark:text-white-60   cursor-pointer p-2 hover:text-blue hover:bg-blue-20 rounded header-s gap-3;
+  }
+}
