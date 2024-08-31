@@ -9,7 +9,9 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { MdOutlineSecurity } from "react-icons/md";
 import { LuHelpCircle } from "react-icons/lu";
 import { FiLogOut } from "react-icons/fi";
-
+import logo1 from "../assets/stripe.svg";
+import logo2 from "../assets/zapier.svg";
+import logo3 from "../assets/logos_shopify.svg";
 export const sidebarItems = [
   [
     {
@@ -145,3 +147,35 @@ export const basicAnim = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
 };
+
+export const tabelData = [
+  {
+    logo: logo1,
+    type: "Finance",
+    rate: 33,
+    profit: "10,998.28",
+  },
+  {
+    logo: logo2,
+
+    type: "CRM",
+    rate: 27,
+    profit: "8,998.59",
+  },
+  {
+    logo: logo3,
+
+    type: "Marketplace",
+    rate: 40,
+    profit: "13,331.24",
+  },
+];
+
+export const radarData = [
+  { region: "Asia", value: 2201 },
+  { region: "Europe", value: 2865 },
+  { region: "Pacific", value: 2475 },
+  { region: "Americans", value: 1762 },
+  { region: "Middle East", value: 1749 },
+  { region: "Africa", value: 1591 },
+];

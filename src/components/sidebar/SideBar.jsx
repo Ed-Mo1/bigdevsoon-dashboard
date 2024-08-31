@@ -67,7 +67,7 @@ const SideBar = () => {
         ))}
       </motion.div>
 
-     <div className="mt-auto">
+     <div className="mt-auto w-full">
      <ThemeSwitcher  isOpen={isOpen}/>
      </div>
     </motion.div>

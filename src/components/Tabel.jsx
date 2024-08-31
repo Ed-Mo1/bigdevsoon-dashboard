@@ -1,29 +1,5 @@
-import logo1 from "../assets/stripe.svg";
-import logo2 from "../assets/zapier.svg";
-import logo3 from "../assets/logos_shopify.svg";
 import { useState } from "react";
-const data = [
-  {
-    logo: logo1,
-    type: "Finance",
-    rate: 33,
-    profit: "10,998.28",
-  },
-  {
-    logo: logo2,
-
-    type: "CRM",
-    rate: 27,
-    profit: "8,998.59",
-  },
-  {
-    logo: logo3,
-
-    type: "Marketplace",
-    rate: 40,
-    profit: "13,331.24",
-  },
-];
+import { tabelData } from "../constants";
 
 const Tabel = () => {
   const [selecetAll, setSelectAll] = useState(false);
@@ -49,7 +25,7 @@ const Tabel = () => {
         </thead>
 
         <tbody className="divide-y  divide-black-16 dark:divide-white-16 space-y-2">
-          {data.map((d, i) => {
+          {tabelData.map((d, i) => {
             return (
               <tr
                 key={i}
